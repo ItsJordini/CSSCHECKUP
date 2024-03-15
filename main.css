@@ -1,0 +1,75 @@
+/* Rule set #1  */
+@import url("https://youtu.be/R2lP146KA5A");
+body {
+    overflow-x: hidden;
+}
+
+.wrapper {
+        position: fixed;
+        font-family: cursive;
+        font-size: smaller;
+        top: 0;
+        right: 0;
+        width: 250px;
+        background-image: repeating-radial-gradient(rgb(145, 145, 143) 10%, rgb(255, 231, 11) 20%, rgb(248, 248, 244))    
+}
+
+h1{
+    padding: 30px;
+    position: absolute;
+    color: #fcfcfc;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.video-container {
+    width: 100%;
+    height: 100%;
+}
+
+ iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 100vh;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+}
+
+h1 {
+    font-family: fantasy;
+    font-size: x-large;
+    font-weight: bold;
+    position: absolute;
+    color: #fcfcfc;
+    border: solid 2px #fcfcfc;
+    border-radius: 50px 50px 50px 50px;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+
+}
+
+
+
+#text {
+    background-color: rgba(209, 40, 40, 0.5) ;
+    position: absolute;
+    color: #fcfcfc;
+    left: 20%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-container iframe {
+        height: 56.25vw;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    .video-container iframe {
+        width: 177.78vh;
+    }
+}
